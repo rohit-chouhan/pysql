@@ -1,0 +1,23 @@
+{      
+ "name": "@rohit-chouhan/pysql",                                    
+ "version": "1.0.0",                                                    
+ "description": "PySQL is database framework for Python (v3.x) Language, Which is based on Python module mysql.connector, this module can help you to make your code more short and more easier.",                             
+ "main": "pysql.py",                                                
+ "scripts": {                                                             
+   "test": "echo \"Error: no test specified\" && exit 1"              
+ },                                                                         
+ "keywords": [                                                            
+  "framework"," python"                                                                 
+ ],                                                                         
+ "author": "Rohit Chouhan",                                             
+ "license": "Apache-2.0 License",                                                      
+ "repository": {                                                         
+    "type": "git",                                                     
+     "url": "git+https://github.com/rohit-chouhan/pysql.git"          
+ },                                                                         
+ "bugs": {                                                               
+    "url": "https://github.com/rohit-chouhan/pysql/issues"           
+ },                                                                        
+  "homepage": "https://github.com/rohit-chouhan/pysql#readme",      
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }    
+}
