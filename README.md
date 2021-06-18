@@ -1,5 +1,25 @@
 [](https://luciopaiva.com/markdown-toc/)
-# Table of contents
+![PySQL Framework](https://i.ibb.co/3FmsWch/mWQTLXjU.gif)
+
+PySQL is database framework for Python (v3.x) Language, Which is based on Python module mysql.connector, this module can help you to make your code more short and more easiar. Before using this framework you must have knowledge about list, tuple, set, dictionary because all codes are designed using it. It's totally free and open source.
+
+## Installation
+Before we said that this framework is based on mysql.connector so you have to install mysql.connector first on your system. Then you can import pysql and enjoy coding!
+> python -m pip install mysql-connector-python
+
+
+After Install mysql.connector successfully create Python file download/install pysql on the same dir where you want to create program. You can clone is using git or npm command, and you can also downlaod manually from repository site.
+
+#### Git Command
+```sh
+git clone https://github.com/rohit-chouhan/pysql
+```
+#### Npm Command
+Go to [https://www.npmjs.com/package/@rohit-chouhan/pysql](https://www.npmjs.com/package/@rohit-chouhan/pysql) or use command
+```sh
+$ npm i @rohit-chouhan/pysql
+```
+## Table of contents
 
 - [Table of contents](#table-of-contents)
   - [Connecting a Server](#connecting-a-server)
@@ -262,3 +282,6 @@ where = ("id",1)
 pysql.delete([db,"users"],where)
 #execute: DELETE FROM users WHERE id=1
 ```
+## --- Finish ---
+
+The module is designed by [Rohit Chouhan](https://www.linkedin.com/in/itsrohitchouhan/), contact us for any bug report, feature or business inquiry.
