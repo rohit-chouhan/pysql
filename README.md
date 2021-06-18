@@ -15,9 +15,9 @@ After Install mysql.connector successfully create Python file download/install p
 git clone https://github.com/rohit-chouhan/pysql
 ```
 #### Npm Command
-Go to [https://www.npmjs.com/package/@rohit-chouhan/pysql](https://www.npmjs.com/package/@rohit-chouhan/pysql) or use command
+Go to [https://www.npmjs.com/package/@rohit-chouhan/pysql](https://www.npmjs.com/package/pysql) or use command
 ```sh
-$ npm i @rohit-chouhan/pysql
+$ npm i pysql
 ```
 ## Table of contents
 
