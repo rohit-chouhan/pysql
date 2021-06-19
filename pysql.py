@@ -3,8 +3,10 @@ _B='SELECT {} FROM {}'
 _A=','
 import mysql.connector
 def table(x):global table;table=str(x)
-def connectServer(x,y,z):A=mysql.connector.connect(host=x,user=y,password=z);return A
-def connect(x,y,z,db):A=mysql.connector.connect(host=x,user=y,password=z,database=db);return A
+def connect(*A):
+	if len(A)==3:B=mysql.connector.connect(host=A[0],user=A[1],password=A[2])
+	else:B=mysql.connector.connect(host=A[0],user=A[1],password=A[2],database=A[3])
+	return B
 def query(x,y):A=x.cursor();A.execute(y);x.commit()
 def createDb(x,y):A=x.cursor();A.execute('CREATE DATABASE '+y+'');x.commit()
 def select(x,y):
