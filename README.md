@@ -43,7 +43,7 @@ To connect a database with localhost server or phpmyadmin, use connect method to
 ```python
 import pysql
 
-db = pysql.connectServer(
+db = pysql.connect(
 	"host",
 	"username",
 	"password"
@@ -56,7 +56,7 @@ Creating database in server, to use this method
 ```python
 import pysql
 
-db = pysql.connectServer(
+db = pysql.connect(
 	"host",
 	"username",
 	"password"
