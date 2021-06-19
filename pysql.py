@@ -21,6 +21,8 @@ def selectWhere(x,y,z):
 	if type(z[1])==str:A="SELECT {} FROM {} WHERE {}='{}'"
 	else:A='SELECT {} FROM {} WHERE {}={}'
 	A=A.format(E,x[1],z[0],z[1]);C.execute(A);return C.fetchall()
+def dropTable(x):A=x[0].cursor();B='DROP TABLE {}';A.execute(B.format(x[1]));x[0].commit()
+def dropDb(x):A=x[0].cursor();B='DROP DATABASE {}';A.execute(B.format(x[1]));x[0].commit()
 def createTable(db,data):
 	A=[]
 	for B in data:A.append(B+' '+data[B])
@@ -56,3 +58,4 @@ def delete(x,d):
 	if type(d[1])==str:A="DELETE FROM {} WHERE {}='{}'"
 	else:A='DELETE FROM {} WHERE {}={}'
 	B.execute(A.format(x[1],d[0],d[1]));x[0].commit()
+def deleteAll(x):A=x[0].cursor();B='DELETE FROM {}';A.execute(B.format(x[1]));x[0].commit()
