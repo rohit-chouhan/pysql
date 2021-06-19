@@ -1,6 +1,6 @@
 {      
  "name": "@rohit-chouhan/pysql",                                    
- "version": "1.0.0",                                                    
+ "version": "1.0.2",                                                    
  "description": "PySQL is database framework for Python (v3.x) Language, Which is based on Python module mysql.connector, this module can help you to make your code more short and more easier.",                             
  "main": "pysql.py",                                                
  "scripts": {                                                             
