@@ -283,5 +283,9 @@ pysql.delete([db,"users"],where)
 #execute: DELETE FROM users WHERE id=1
 ```
 ## --- Finish ---
+#### Change Logs
+```sh
+ - ConnectSever() removed and merged to Connect() method (July 19, 21)
+```
 
 The module is designed by [Rohit Chouhan](https://www.linkedin.com/in/itsrohitchouhan/), contact us for any bug report, feature or business inquiry.
