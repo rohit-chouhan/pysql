@@ -2,7 +2,8 @@
 ![PySQL Framework](https://i.ibb.co/3FmsWch/mWQTLXjU.gif)
 
 PySQL is database framework for Python (v3.x) Language, Which is based on Python module mysql.connector, this module can help you to make your code more short and more easier. Before using this framework you must have knowledge about list, tuple, set, dictionary because all codes are designed using it. It's totally free and open source.
-
+## Tutorial Video in English ([Watch Now](https://www.youtube.com/watch?v=8SQcq0a_UEg))
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/8SQcq0a_UEg/mqdefault.jpg)](https://www.youtube.com/watch?v=8SQcq0a_UEg)
 ## Installation
 Before we said that this framework is based on mysql.connector so you have to install mysql.connector first on your system. Then you can import pysql and enjoy coding!
 > python -m pip install mysql-connector-python
