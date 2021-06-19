@@ -19,13 +19,13 @@ Go to [https://www.npmjs.com/package/pysql](https://www.npmjs.com/package/pysql)
 ```sh
 $ npm i pysql
 ```
-## Table of contents
-
-- [Table of contents](#table-of-contents)
+# Table of contents
   - [Connecting a Server](#connecting-a-server)
   - [Create a Database in Server](#create-a-database-in-server)
+  - [Drop  Database](#drop--database)
   - [Connecting a Database](#connecting-a-database)
   - [Creating Table in Database](#creating-table-in-database)
+  - [Drop Table in Database](#drop-table-in-database)
   - [Selecting data from Table](#selecting-data-from-table)
   - [Add New Column to Table](#add-new-column-to-table)
   - [Modify Column to Table](#modify-column-to-table)
@@ -63,6 +63,18 @@ db = pysql.connect(
  )
  pysql.createDb(db,"demo")
  #execute: CREATE DATABASE demo
+```
+### Drop  Database
+------------
+To drop database use this method .
+##### Syntex Code -
+```python
+pysql.dropDb([connect_obj,"table_name"])
+```
+##### Example Code -
+```python
+pysql.dropDb([db,"demo"])
+#execute:DROP DATABASE demo
 ```
 ### Connecting a Database
 ------------
@@ -109,6 +121,18 @@ pysql.createTable([db,"details"],{
     "email":"varchar(50)",
     "address":"varchar(500)"
 })
+```
+### Drop Table in Database
+------------
+To drop table in database use this method .
+##### Syntex Code -
+```python
+pysql.dropTable([connect_obj,"table_name"])
+```
+##### Example Code -
+```python
+pysql.dropTable([db,"users"])
+#execute:DROP TABLE users
 ```
 ### Selecting data from Table
 ------------
