@@ -168,9 +168,13 @@ for x in records:
 #execute: SELECT name, email FROM details
 ```
 
-##### Syntex `With Where`-
+##### Syntex `Where and Where Not`-
 ```python
+#For Where Column=Data
 records = pysql.selectWhere([db,"table_name"],{"column","column"},("column","data"))
+
+#For Where Not Column=Data (use ! with column)
+records = pysql.selectWhere([db,"table_name"],{"column","column"},("column!","data"))
 for x in records:
   print(x)
 ```
@@ -274,10 +278,14 @@ data = ("name","Rohit")
 pysql.updateAll([db,"users"],data)
 #execute: UPDATE users SET name='Rohit'
 ```
-##### Syntex `For Updating Data (Where)`-
+##### Syntex `For Updating Data (Where and Where Not)`-
 ```python
 data = ("column","data to update")
+#For Where Column=Data
 where = ("column","data")
+
+#For Where Not Column=Data (use ! with column)
+where = ("column!","data")
 pysql.update([db,"users"],data,where)
 ```
 ##### Example - 
@@ -299,14 +307,19 @@ pysql.deleteAll([db,"table_name"])
 pysql.deleteAll([db,"users"])
 #execute: DELETE FROM users
 ```
-##### Syntex `For Deleting Data (Where)`-
+##### Syntex `For Deleting Data (Where and Where Not)`-
 ```python
 where = ("column","data")
+
 pysql.delete([db,"table_name"],where)
 ```
 ##### Example - 
 ```python
+#For Where Column=Data
 where = ("id",1)
+
+#For Where Not Column=Data (use ! with column)
+where = ("id!",1)
 pysql.delete([db,"users"],where)
 #execute: DELETE FROM users WHERE id=1
 ```
@@ -318,6 +331,9 @@ pysql.delete([db,"users"],where)
  - deleteAll() [Fixed]
  - dropTable() [Added]
  - dropDb() [Added]
+ 
+[20/06/2021]
+ - Where Not Docs [Added]
 ```
 
 The module is designed by [Rohit Chouhan](https://www.linkedin.com/in/itsrohitchouhan/), contact us for any bug report, feature or business inquiry.
