@@ -11,6 +11,12 @@ Before we said that this framework is based on mysql.connector so you have to in
 
 After Install mysql.connector successfully create Python file download/install pysql on the same dir where you want to create program. You can clone is using git or npm command, and you can also downlaod manually from repository site.
 
+#### PyPi Command
+Go to [https://pypi.org/project/pysql-framework/](https://pypi.org/project/pysql-framework/) or use command
+```sh
+pip install pysql-framework
+```
+
 #### Git Command
 ```sh
 git clone https://github.com/rohit-chouhan/pysql
