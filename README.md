@@ -23,6 +23,8 @@ $ npm i pysql
 
 #### Snippet Extention for VS Code
 Install From Here [https://marketplace.visualstudio.com/items?itemName=rohit-chouhan.pysql](https://marketplace.visualstudio.com/items?itemName=rohit-chouhan.pysql)
+
+[![IMAGE ALT TEXT HERE](https://i.ibb.co/L9LNWb8/pysql.png)](https://marketplace.visualstudio.com/items?itemName=rohit-chouhan.pysql)
 # Table of contents
   - [Connecting a Server](#connecting-a-server)
   - [Create a Database in Server](#create-a-database-in-server)
