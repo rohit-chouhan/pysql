@@ -1,15 +1,15 @@
 [](https://luciopaiva.com/markdown-toc/)
 ![PySQL Framework](https://i.ibb.co/3FmsWch/mWQTLXjU.gif)
 
-PySQL is database framework for Python (v3.x) Language, Which is based on Python module mysql.connector, this module can help you to make your code more short and more easier. Before using this framework you must have knowledge about list, tuple, set, dictionary because all codes are designed using it. It's totally free and open source.
+PySQL is a database framework for the Python (v3.x) Language, Which is based on the Python module mysql.connector. This module can help you to make your code shorter and more simple. Before using this framework you must have knowledge about lists, tuples, sets, and dictionaries because the PySQL code is designed using them. It's totally free and open source.
 ## Tutorial Video in English ([Watch Now](https://www.youtube.com/watch?v=8SQcq0a_UEg))
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/8SQcq0a_UEg/mqdefault.jpg)](https://www.youtube.com/watch?v=8SQcq0a_UEg)
 ## Installation
-Before we said that this framework is based on mysql.connector so you have to install mysql.connector first on your system. Then you can import pysql and enjoy coding!
+Before we said that this framework is based on the mysql.connector so you have to install the mysql.connector first on your system. Then you can import pysql and enjoy coding!
 > python -m pip install mysql-connector-python
 
 
-After Install mysql.connector successfully create Python file download/install pysql on the same dir where you want to create program. You can clone is using git or npm command, and you can also downlaod manually from repository site.
+After Installing the mysql.connector successfully, create a Python file and download/install pysql on the same dir you want to create program. You can clone it using git or npm command, and you can also downlaod manually from the repository site.
 
 #### PyPi Command
 Go to [https://pypi.org/project/pysql-framework/](https://pypi.org/project/pysql-framework/) or use command
@@ -50,7 +50,7 @@ Install From Here [https://marketplace.visualstudio.com/items?itemName=rohit-cho
 
 ### Connecting a Server
 ------------
-To connect a database with localhost server or phpmyadmin, use connect method to establish your python with database server.
+To connect a database with the localhost server or phpmyadmin, use the connect method to establish your python program with the database server.
 
 ```python
 import pysql
@@ -63,7 +63,7 @@ db = pysql.connect(
 ```
 ### Create a Database in Server
 ------------
-Creating database in server, to use this method
+Creating a database in server, to use this method
 
 ```python
 import pysql
@@ -90,7 +90,7 @@ pysql.dropDb([db,"demo"])
 ```
 ### Connecting a Database
 ------------
-To connect a database with localhost server or phpmyadmin, use connect method to establish your python with database server.
+To connect a database with the localhost server or phpmyadmin, use the connect method to establish your python program connection with database server.
 
 ```python
 import pysql
@@ -104,7 +104,7 @@ db = pysql.connect(
 ```
 ### Creating Table in Database
 ------------
-To create table in database use this method to pass column name as key and data type as value.
+To create a table in the database use this method to pass column name as key and data type as value.
 ##### Syntex Code -
 ```python
 
@@ -124,7 +124,7 @@ pysql.createTable([db,"details"],{
 })
 ```
 ##### 2nd Example Code -
-Use can use any Constraint with Data Value
+You can use any Constraint with Data Value
 ```python
 
 pysql.createTable([db,"details"],{
@@ -136,7 +136,7 @@ pysql.createTable([db,"details"],{
 ```
 ### Drop Table in Database
 ------------
-To drop table in database use this method .
+To drop a table in the database use this method .
 ##### Syntex Code -
 ```python
 pysql.dropTable([connect_obj,"table_name"])
@@ -148,7 +148,7 @@ pysql.dropTable([db,"users"])
 ```
 ### Selecting data from Table
 ------------
-For Select data from table, you have to mention the connector object with table name. pass column names in set.
+For Selecting data from the table, you have to mention the connector object with table name. pass column names in set.
 ##### Syntex `For All Data (*)`-
 ```python
 records = pysql.selectAll([db,"table_name"])
@@ -195,8 +195,8 @@ for x in records:
 ```
 ### Add New Column to Table
 ------------
-To add column in table, use this method to pass column name as key and data type as value.
-Note: you can only add one column only one call
+To add columns in a table, use this method to pass column name as key and data type as value.
+Note: you can only add one column per call
 ##### Syntex Code -
 ```python
 
@@ -242,7 +242,7 @@ pysql.dropColumn([db,"details"],"name")
 ```
 ### Manual Execute Query
 ------------
-To execute manual SQL Query to use this method.
+To execute manual SQL Query using this method.
 ##### Syntex Code -
 ```python
 pysql.query(connector_object,your_query)
@@ -254,7 +254,7 @@ pysql.query(db,"INSERT INTO users (name) VALUES ('Rohit')")
 
 ### Inserting data
 ------------
-For Inserting data in database, you have to mention the connector object with table name, and data as sets.
+For Inserting data in the database, you have to mention the connector object with table name, and data as sets.
 ##### Syntex -
 ```python
 data = 	{
@@ -274,7 +274,7 @@ pysql.insert([db,"users"],data)
 
 ### Updating data
 ------------
-For Update data in database, you have to mention the connector object with table name, and data as tuple.
+For Updating data in the database, you have to mention the connector object with table name, and data as tuple.
 ##### Syntex `For Updating All Data`-
 ```python
 data = ("column","data to update")
@@ -305,7 +305,7 @@ pysql.update([db,"users"],data,where)
 ```
 ### Deleting data
 ------------
-For Delete data in database, you have to mention the connector object with table name.
+For Deleting data in the database, you have to mention the connector object with the table name.
 ##### Syntex `For Delete All Data`-
 ```python
 pysql.deleteAll([db,"table_name"])
@@ -344,4 +344,4 @@ pysql.delete([db,"users"],where)
  - Where Not Docs [Added]
 ```
 
-The module is designed by [Rohit Chouhan](https://www.linkedin.com/in/itsrohitchouhan/), contact us for any bug report, feature or business inquiry.
+The module is designed by [Rohit Chouhan](https://www.linkedin.com/in/itsrohitchouhan/), contact us for any bug reports, feature or business inquiry.
